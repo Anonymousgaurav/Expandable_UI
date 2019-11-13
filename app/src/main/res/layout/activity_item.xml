@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rmain"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/relative_ques"
+                >
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="What is Fairloy ?"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    />
+
+            <ImageButton
+                android:id="@+id/selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/notexpand"
+                android:padding="13dp"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="13dp"
+                android:gravity="center"
+                />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/expandableview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:layout_below="@id/relative_ques"
+                android:background="#95c377"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details"
+                    android:id="@+id/tv_detail"
+                    android:fontFamily="@font/nunito_sans"
+                    android:letterSpacing="0.008"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="5dp"
+                    android:lineHeight="19dp"
+                    android:textStyle="normal"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view"
+        android:layout_below="@id/rmain"
+        android:background="#E0DCDC"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:visibility="visible"
+        android:layout_marginTop="-2dp"
+        />
+
+</RelativeLayout>
+
+</layout>
